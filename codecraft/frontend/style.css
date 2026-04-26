@@ -1,0 +1,118 @@
+/* 🌌 Background */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url("https://images.unsplash.com/photo-1518770660439-4636190af475") no-repeat center center/cover;
+    color: white;
+    display: flex;
+}
+
+/* 🔥 Sidebar */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    box-shadow: 2px 0 15px rgba(0,0,0,0.5);
+}
+
+.sidebar h2 {
+    color: #00d4ff;
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* 📦 Main Section */
+.main {
+    flex: 1;
+    padding: 40px;
+}
+
+/* ✨ Heading */
+h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #00d4ff, #ff00c8);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* fallback for other browsers */
+    color: #00d4ff;
+}
+
+/* 📝 Textarea */
+textarea {
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    margin-top: 20px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+textarea:focus {
+    outline: none;
+    transform: scale(1.01);
+}
+
+/* ⚡ Button */
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(45deg, #00d4ff, #ff00c8);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.7);
+}
+
+/* 💬 Output Box */
+#output {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+#output:hover {
+    transform: scale(1.02);
+}
+
+/* 🖥 Preview Panel */
+#preview {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+    background: white;
+}
+
+/* 🎯 Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00d4ff;
+    border-radius: 10px;
+}
